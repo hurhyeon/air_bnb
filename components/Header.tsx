@@ -88,8 +88,7 @@ const Header: React.FC = () =>{
         <Container>
         <Link href="/" legacyBehavior>
             <a className="header-logo-wrapper">
-                {/* 왜 이미지 안뜨냐 ㅅㅂ
-                <AirbnbLogoIcon className="header-logo"/>
+                {/* <AirbnbLogoIcon className="header-logo"/>
                 <AirbnbLogoTextIcon /> */}
             </a>
         </Link>
