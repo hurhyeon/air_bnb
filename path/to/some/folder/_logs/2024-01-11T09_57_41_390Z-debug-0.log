@@ -1,0 +1,70 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\nsksj\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.3.0
+2 info using node@v20.10.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:C:\Users\nsksj\AppData\Roaming\npm\node_modules\npm\npmrc Completed in 4ms
+6 timing config:load:builtin Completed in 5ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:C:\next.js_project\final_project\.npmrc Completed in 1ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:C:\Users\nsksj\.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:C:\Users\nsksj\AppData\Roaming\npm\etc\npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 14ms
+17 timing npm:load:configload Completed in 14ms
+18 timing config:load:flatten Completed in 3ms
+19 timing npm:load:mkdirpcache Completed in 0ms
+20 timing npm:load:mkdirplogs Completed in 1ms
+21 verbose title npm install packageName
+22 verbose argv "install" "packageName" "--cache" "path/to/some/folder"
+23 timing npm:load:setTitle Completed in 1ms
+24 timing npm:load:display Completed in 0ms
+25 verbose logfile logs-max:10 dir:C:\next.js_project\final_project\path\to\some\folder\_logs\2024-01-11T09_57_41_390Z-
+26 verbose logfile C:\next.js_project\final_project\path\to\some\folder\_logs\2024-01-11T09_57_41_390Z-debug-0.log
+27 timing npm:load:logFile Completed in 11ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 65ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 69ms
+34 timing idealTree:userRequests Completed in 4ms
+35 silly idealTree buildDeps
+36 silly fetch manifest packageName@*
+37 timing arborist:ctor Completed in 0ms
+38 http fetch GET 200 https://registry.npmjs.org/packageName 329ms (cache miss)
+39 silly placeDep ROOT packageName@ OK for: final_project@0.1.0 want: *
+40 timing idealTree:#root Completed in 338ms
+41 timing idealTree:node_modules/packageName Completed in 0ms
+42 timing idealTree:buildDeps Completed in 340ms
+43 timing idealTree:fixDepFlags Completed in 2ms
+44 timing idealTree Completed in 418ms
+45 timing command:install Completed in 428ms
+46 verbose type range
+47 verbose stack packageName: No versions available for packageName
+47 verbose stack     at pickManifest (C:\Users\nsksj\AppData\Roaming\npm\node_modules\npm\node_modules\npm-pick-manifest\lib\index.js:140:25)
+47 verbose stack     at module.exports (C:\Users\nsksj\AppData\Roaming\npm\node_modules\npm\node_modules\npm-pick-manifest\lib\index.js:187:16)
+47 verbose stack     at RegistryFetcher.manifest (C:\Users\nsksj\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\registry.js:130:22)
+47 verbose stack     at async #nodeFromEdge (C:\Users\nsksj\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1049:19)
+47 verbose stack     at async #buildDepStep (C:\Users\nsksj\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:917:11)
+47 verbose stack     at async Arborist.buildIdealTree (C:\Users\nsksj\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:196:7)
+47 verbose stack     at async Promise.all (index 1)
+47 verbose stack     at async Arborist.reify (C:\Users\nsksj\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:159:5)
+47 verbose stack     at async Install.exec (C:\Users\nsksj\AppData\Roaming\npm\node_modules\npm\lib\commands\install.js:153:5)
+47 verbose stack     at async module.exports (C:\Users\nsksj\AppData\Roaming\npm\node_modules\npm\lib\cli-entry.js:61:5)
+48 verbose cwd C:\next.js_project\final_project
+49 verbose Windows_NT 10.0.22621
+50 verbose node v20.10.0
+51 verbose npm  v10.3.0
+52 error code ENOVERSIONS
+53 error No versions available for packageName
+54 verbose exit 1
+55 timing npm Completed in 863ms
+56 verbose unfinished npm timer reify 1704967061824
+57 verbose unfinished npm timer reify:loadTrees 1704967061829
+58 verbose code 1
+59 error A complete log of this run can be found in: C:\next.js_project\final_project\path\to\some\folder\_logs\2024-01-11T09_57_41_390Z-debug-0.log
