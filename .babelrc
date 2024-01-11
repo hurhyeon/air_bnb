@@ -1,0 +1,4 @@
+{
+    "presets":["next/bael"],
+    "plugins": [["styled-components",{"ssr":true}],"inline-react-svg"]
+}

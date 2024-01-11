@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CloseXIcon from "../../public/static/svg/modal/modal_colose_x_icon.svg";
-import MailIcon from "../../public/static/svg/auth/person.svg"
+import MailIcon from "../../public/static/svg/auth/mail.svg"
 import PersonIcon from "../../public/static/svg/auth/person.svg"
 import OpenedEyeIcon from "../../public/static/svg/auth/opened_eye.svg"
 import ClosedEyeIcon from "../../public/static/svg/auth/closed_eye.svg"
@@ -51,7 +51,7 @@ const SignUpModal: React.FC =()=>{
             {/* <CloseXIcon className="mordal-close-x-icon"/> */}
             <div className="input-wrapper">
                 <input placeholder="이메일 주소" type="email" name="email"/>
-                {/* <MailIcon/> */}
+                <MailIcon/> 
             </div>
             <div className="input-wrapper">
                 <input placeholder="이름(예:길동)"/>
