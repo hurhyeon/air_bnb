@@ -6,7 +6,7 @@ import PersonIcon from "../../public/static/svg/auth/person.svg"
 import OpenedEyeIcon from "../../public/static/svg/auth/opened_eye.svg"
 import ClosedEyeIcon from "../../public/static/svg/auth/closed_eye.svg"
 import palette from "../../styles/palette";
-import Input from "../common/input"
+import Input from "../common/Input"
 
 
 const Container = styled.form`
@@ -61,18 +61,18 @@ const SignUpModal: React.FC =()=>{
 
     return (
         <Container>
-            {/* <CloseXIcon className="mordal-close-x-icon"/> */}
+            <CloseXIcon className="mordal-close-x-icon"/>
             <div className="input-wrapper">
-                <input placeholder="이메일 주소" type="email" name="email" onChange={onChangeEmail}/>
-                {/* icon{<MailIcon/>} vaule={email} 이거인풋안에 들어가야함 */}
+                <Input placeholder="이메일 주소" type="email" icon={<MailIcon />}  name="email" value={email} onChange={onChangeEmail}/>
+                
             </div>
             <div className="input-wrapper">
-            <input placeholder="이름(예:길동)" onChange={onChangeLastname}/>
-                {/* icon{<PersonIcon/>} vaule={Lastname} 이거인풋안에 들어가야함 */}
+            <Input placeholder="이름(예:길동)" icon={<PersonIcon/>} value={lastname}  onChange={onChangeLastname}/>
+                
             </div>
             <div className="input-wrapper">
-            <input placeholder="성(예:홍)" onChange={onChangeFirstname}/>
-                {/* icon{<PersonIcon/>} vaule={Firstname} 이거인풋안에 들어가야함 */}
+            <Input placeholder="성(예:홍)" icon={<PersonIcon/>} value={firstname}  onChange={onChangeFirstname}/>
+                
             </div>
             <div className="input-wrapper sign-up-password-input-wrapper">
         <Input

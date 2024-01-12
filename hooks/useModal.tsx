@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import styled from "styled-components";
 
-const Container = styled.div`
+const Container = styled.div `
   width: 100%;
   height: 100%;
   display: flex;
