@@ -2,6 +2,7 @@ import { NextApiRequest,NextApiResponse } from "next";
 import Data from "../../../lib/data";
 import bcrypt from "bcryptjs"
 import  jwt  from "jsonwebtoken";
+import user from "../../../lib/data/user";
 import { StoredUserType } from "../../../types/user";
 
 export default async (req: NextApiRequest, res:NextApiResponse) => {
