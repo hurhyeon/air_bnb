@@ -2,6 +2,7 @@ import { AppProps } from "next/app";
 import GlobalStyle from "../styles/Globalstyle";
 import React from "react";
 import Header from "../components/Header";
+import { wrapper } from "../store";
 
 const App = ({Component, pageProps}: AppProps) => {
   return(
@@ -14,4 +15,4 @@ const App = ({Component, pageProps}: AppProps) => {
   );
 };
 
-export default App;
+export default wrapper.withRedux(App);

@@ -83,7 +83,7 @@ const Container = styled.div`
 `;
 {/* <ModalPortal closePortal={()=> setModalOpened(false)}> */}
 const Header: React.FC = () =>{
-    const {openModal, ModalPortal} = useModal();
+    const {openModal, ModalPortal, closeModal } = useModal();
     return(
         <Container>
         <Link href="/" legacyBehavior>
@@ -101,7 +101,7 @@ const Header: React.FC = () =>{
             </button>
         </div>
         <ModalPortal>
-            <SignUpModal/>
+            <SignUpModal closeModal={closeModal}/>
         </ModalPortal>
         </Container>
     );
