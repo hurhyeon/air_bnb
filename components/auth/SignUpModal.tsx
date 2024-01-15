@@ -15,7 +15,8 @@ import { useDispatch } from "react-redux";
 import { userActions } from "../../store/user";
 import { commonActions } from "../../store/common";
 import useValidateMode from "../../hooks/useValidateMode";
-import PasswordWarning from "./PassWordWarning";
+import PasswordWarning from "./PasswordWarning";
+import { authActions } from "../../store/auth";
 
 const Container = styled.form`
     width:568px;
@@ -33,6 +34,7 @@ const Container = styled.form`
         position: relative;
         margin-bottom: 16px;
     }
+
     .sign-up-password-input-wrapper {
         svg {
           cursor: pointer;
@@ -45,21 +47,26 @@ const Container = styled.form`
       margin-top:16px;
       margin-bottom:8px
     }
+
     .sign-up-modal-birthday-info{
       margin-bottom:16px;
       color:${palette.charcoal};
     }
+
     .sign-up-modal-birthday-selectors {
       display: flex;
       margin-bottom: 24px;
-      .sign-up-modal-birthday-month-selector {
+    }
+
+    .sign-up-modal-birthday-month-selector {
         margin-right: 16px;
         flex-grow: 1;
-      }
+    }
       .sign-up-modal-birthday-day-selector {
         margin-right: 16px;
         width: 25%;
       }
+      
       .sign-up-modal-birthday-year-selector {
         width: 33.3333%;
       }
@@ -69,7 +76,8 @@ const Container = styled.form`
         padding-bottom:16px;
         border-bottom: 1px solid ${palette.gray_eb};
       }
-      .sign-up-modal-set-login {
+
+      .sign-up-modal-set-login{
         color: ${palette.dark_cyan};
         margin-left: 8px;
         cursor: pointer;
@@ -219,7 +227,11 @@ useEffect(() => {
       }
     }
   };
-  
+  //* 로그인 모달로 변경하기
+  const changeToLoginModal = () =>{
+    dispatch(authActions.setAuthMode("login"));
+  };
+
     return (
         <Container onSubmit={onSubmitSignUp}>
             <CloseXIcon className="mordal-close-x-icon" onClick ={closeModal}/>
@@ -296,7 +308,7 @@ useEffect(() => {
         <span
           className="sign-up-modal-set-login"
           role="presentation"
-          onClick={()=>{}}
+          onClick={changeToLoginModal}
         >
           로그인
         </span>
