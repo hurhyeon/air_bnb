@@ -63,4 +63,4 @@ const Selector: React.FC<Iprops> = ({options =[], disabledOptions = [], isValid,
     );
 };
 
-export default Selector;
+export default React.memo(Selector);
