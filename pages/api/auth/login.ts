@@ -30,8 +30,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       res.setHeader(
         "Set-Cookie",
         `access_token=${token}; path=/; expires=${new Date(
-          Date.now() + 60 * 60 * 24 * 1000 * 3 //3일
-        )}; httponly`
+          Date.now() + 60 * 60 * 24 * 1000 * 3).toUTCString()}; HttpOnly`
       );
 
       const userWithoutPassword: Partial<Pick<

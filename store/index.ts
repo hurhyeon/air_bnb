@@ -8,11 +8,10 @@ import user from "./user";
 import common from "./common";
 import auth from "./auth";
 
-
 const rootReducer = combineReducers({
   common: common.reducer,
   user: user.reducer,
-  auth: auth.reducer,
+  auth: auth.reducer, 
 });
 
 //* 스토어의 타입
