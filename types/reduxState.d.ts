@@ -9,4 +9,5 @@ export type CommonState = {
   export type UserState = UserType & {
     isLogged: boolean;
   };
+
   
