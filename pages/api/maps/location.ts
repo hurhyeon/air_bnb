@@ -1,5 +1,5 @@
 import { NextApiResponse, NextApiRequest } from "next";
-import axios from "axios";
+import axios from "../../../lib/api"
 
 export default async (req:NextApiRequest, res:NextApiResponse) => {
     if(req.method === "GET"){
