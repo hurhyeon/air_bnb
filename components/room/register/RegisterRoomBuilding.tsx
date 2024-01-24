@@ -107,7 +107,7 @@ const RegisterRoomBuilding: React.FC = () =>{
 
   //* 게스트용 숙소 인지 변경시
   const onChangeIsSetUpForGuest = (value: any) => {
-    dispatch(registerRoomActions.setIsSetupForGuest(value));
+    dispatch(registerRoomActions.setIsSetUpForGuest(value));
   };
 
   //* 선택된 건물 유형 options
