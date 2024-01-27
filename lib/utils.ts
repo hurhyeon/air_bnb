@@ -31,3 +31,24 @@ export const makeMoneyString = (input: string) => {
   }
   return "";
 };
+
+//query string 만들기
+export const makeQueryString = (
+  baseUrl: string,
+  queuriesObject:Object & {[key:string]:any}
+) => {
+  const keys = Object.keys(queuriesObject);
+  const value = Object.values(queuriesObject);
+  if (keys.length === 0){
+    return baseUrl;
+  }
+  let queryString = `${baseUrl}?`;
+  keys.forEach((key,i)=>{
+    if(queuriesObject[key]){
+      queryString += `${keys[i]}=${value[i]}&`;
+    }
+  });
+
+  //마지막 '$' 제거하기
+  return queryString.slice(0,-1);
+}
