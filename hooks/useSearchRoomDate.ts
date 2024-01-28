@@ -6,6 +6,7 @@ const useSearchRoomDate = () => {
   const checkInDate = useSelector((state) => state.searchRoom.checkInDate);
   const checkOutDate = useSelector((state) => state.searchRoom.checkOutDate);
 
+  //디스패치 값 설정
   const dispatch = useDispatch();
 
   //* 체크인 날짜 변경 Dispatch
